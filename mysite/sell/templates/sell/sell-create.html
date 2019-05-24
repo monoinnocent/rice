@@ -1,0 +1,412 @@
+{% load static %} 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <link rel="apple-touch-icon" sizes="76x76" href="../../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>
+        ศูนย์เมล็ดพันธุ์ข้าวแพร่
+    </title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+          name='viewport'/>
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Prompt:300" rel="stylesheet">
+    <!-- CSS Files -->
+  <link href="{% static 'sell/css/bootstrap.min.css' %}" rel="stylesheet" />
+  <link href="{% static 'sell/css/paper-dashboard.css' %}" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="{% static 'sell/demo/demo.css' %}"  rel="stylesheet" />
+</head>
+
+<body class="" style="font-family: 'Prompt', sans-serif;">
+<div class="wrapper ">
+    <div class="sidebar" data-color="black" data-active-color="danger">
+        <!--
+          Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
+      -->
+        <div class="logo">
+            <a href="http://www.creative-tim.com" class="simple-text logo-mini">
+                <div class="logo-image-small">
+                    <img src="../../assets/img/logo-small.png">
+                </div>
+            </a>
+            <a href="http://www.creative-tim.com" class="simple-text logo-normal">
+
+                <!-- <div class="logo-image-big">
+                  <img src="../../assets/img/logo-big.png">
+                </div> -->
+            </a>
+        </div>
+        <div class="sidebar-wrapper">
+            <div class="user">
+                <div class="photo">
+
+                </div>
+                <div class="info">
+                    <a data-toggle="collapse" href="#collapseExample" class="collapsed">
+              <span>
+                 Chet Faker
+                <b class="caret"></b>
+              </span>
+                    </a>
+                    <div class="clearfix"></div>
+                    <div class="collapse" id="collapseExample">
+                        <ul class="nav">
+                            <li>
+                                <a href="../pages/user.html">
+                                    <span class="sidebar-mini-icon"><i class="nc-icon nc-badge"></i></span>
+                                    <span class="sidebar-normal">ข้อมูลส่วนตัว</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+                <ul class="nav">
+                <li class="">
+                    <a href="../home-dashboard.html">
+                        <i class="nc-icon nc-bank"></i>
+                        <p>หน้าแรก</p>
+                    </a>
+                </li>
+
+                <li class="">
+                    <a href="../tables/buy-datatables.net.html">
+                        <i class="nc-icon nc-single-copy-04"></i>
+                        <p>จัดการข้อมูลการซื้อคืนเมล็ดพันธุ์</p>
+                    </a>
+                </li>
+
+                <li class="">
+                    <a href="../tables/sup-datatables.net.html">
+                        <i class="nc-icon nc-badge"></i>
+                        <p>จัดการข้อมูลผู้ผลิต</p>
+                    </a>
+                </li>
+
+                <li class="">
+                    <a href="../tables/quality-datatables.net.html">
+                        <i class="nc-icon nc-single-copy-04"></i>
+                        <p>จัดการข้อมูลคุณภาพเมล็ดพันธุ์</p>
+                    </a>
+                </li>
+
+                <li class="active">
+                    <a href="../tables/sell-datatables.net.html">
+                        <i class="nc-icon nc-single-copy-04"></i>
+                        <p>จัดการข้อมูลการจำหน่ายเมล็ดพันธุ์</p>
+                    </a>
+                </li>
+
+                <li class="">
+                    <a href="../tables/cus-datatables.net.html">
+                        <i class="nc-icon nc-badge"></i>
+                        <p>จัดการข้อมูลลูกค้า</p>
+                    </a>
+                </li>
+
+                <li class="">
+                    <a href="../tables/member-datatables.net.html">
+                        <i class="nc-icon nc-single-copy-04"></i>
+                        <p>จัดการข้อมูลสมาชิก</p>
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="../tables/breed-datatables.net.html">
+                        <i class="nc-icon nc-single-copy-04"></i>
+                        <p>จัดการข้อมูลพันธุ์ข้าว</p>
+                    </a>
+                </li>
+
+                <li class="">
+                    <a href="../tables/sell-timeseries.net.html">
+                        <i class="nc-icon nc-chart-bar-32"></i>
+                        <p>พยากรณ์ TimeSeries</p>
+                    </a>
+                </li>
+
+                <li>
+                    <a data-toggle="collapse" href="#pagesExamples">
+                        <i class="nc-icon nc-book-bookmark"></i>
+                        <p>
+                            ออกแบบรายงาน
+                            <b class="caret"></b>
+                        </p>
+                    </a>
+                    <div class="collapse " id="pagesExamples">
+                        <ul class="nav">
+                            <li>
+                                <a href="../buydashboard.html">
+                                    <span class="sidebar-mini-icon">DBB</span>
+                                    <span class="sidebar-normal"> กราฟซื้อเมล็ดพันธุ์ข้าว </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../selldashboard.html">
+                                    <span class="sidebar-mini-icon">DBS</span>
+                                    <span class="sidebar-normal"> กราฟจำหน่ายเมล็ดพันธุ์ </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-panel">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent">
+            <div class="container-fluid">
+                <div class="navbar-wrapper">
+                    <div class="navbar-toggle">
+                        <button type="button" class="navbar-toggler">
+                            <span class="navbar-toggler-bar bar1"></span>
+                            <span class="navbar-toggler-bar bar2"></span>
+                            <span class="navbar-toggler-bar bar3"></span>
+                        </button>
+                    </div>
+
+                    <a class="navbar-brand" href="#pablo"><img
+                            src="https://upload.wikimedia.org/wikipedia/th/4/4e/%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%81%E0%B8%A3%E0%B8%A1%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A7.png"
+                            style="width:40px; height:40px">
+                        Phrae Rice Seed Center :ศูนย์เมล็ดพันธุ์ข้าวแพร่
+                    </a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+                        aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-bar navbar-kebab"></span>
+                    <span class="navbar-toggler-bar navbar-kebab"></span>
+                    <span class="navbar-toggler-bar navbar-kebab"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navigation">
+
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item btn-rotate dropdown">
+                            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="nc-icon nc-settings-gear-65"></i>
+                                <p>
+                                    <span class="d-lg-none d-md-block">Account</span>
+                                </p>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">ข้อมูลส่วนตัว</a>
+                                <a class="dropdown-item" href="#">ติดต่อผู้ดูแล</a>
+                                <a class="dropdown-item" href="#">ออกจากระบบ</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+      <!-- <div class="panel-header panel-header-sm">
+
+
+</div> -->
+      <div class="content">
+
+             <div class=col-lg-5>
+            <div class="card ">
+              <div class="card-header ">
+                <h5 class="card-title">วันที่จำหน่ายเมล็ดพันธุ์ข้าว</h5>
+              </div>
+              <div class="card-body ">
+                <div class="form-group">
+                  <input type="date" class=col-md-6 name="trip-start" value="2559-12-09">
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        <div class="row">
+          <div class="col-md-12">
+            <form id="TypeValidation" class="form-horizontal" action="" method="">
+              <div class="card ">
+                <div class="card-header ">
+                  <h4 class="card-title">เพิ่มข้อมูลการจำหน่ายเมล็ดพันธุ์ข้าว</h4>
+                </div>
+                <div class="card-body ">
+                  <div class="row">
+                    <label class="col-sm-2 col-form-label">ชื่อผู้ซื้อ</label>
+                    <div class="col-sm-3">
+                      <div class="form-group">
+                        <input class="form-control" type="text" name="firstName" value="" required="true" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--<div class="row">-->
+                    <!--<label class="col-sm-2 col-form-label">Url</label>-->
+                    <!--<div class="col-sm-7">-->
+                      <!--<div class="form-group">-->
+                        <!--<input class="form-control" type="text" name="url" url="true" />-->
+                      <!--</div>-->
+                    <!--</div>-->
+                    <!--<label class="col-sm-3 label-on-right">-->
+                      <!--<code>url="true"</code>-->
+                    <!--</label>-->
+                  <!--</div>-->
+                  <!--<div class="row">-->
+                    <!--<label class="col-sm-2 col-form-label">Equal to</label>-->
+                    <!--<div class="col-sm-3">-->
+                      <!--<div class="form-group">-->
+                        <!--<input class="form-control" id="idSource" type="text" placeholder="#idSource" />-->
+
+                      <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-sm-3">-->
+                      <!--<div class="form-group">-->
+                        <!--<input class="form-control" id="idDestination" type="text" placeholder="#idDestination" equalTo="#idSource" />-->
+                      <!--</div>-->
+                    <!--</div>-->
+                    <!--<label class="col-sm-4 label-on-right">-->
+                      <!--<code>equalTo="#idSource"</code>-->
+                    <!--</label>-->
+                  <!--</div>-->
+                </div>
+
+                <div class="card-footer text-center">
+                    <a href="../tables/sell-datatables.net.html">
+                    <button type="button"  class="btn btn-danger">ยกเลิก</button>
+                  </a>
+                  <a href="../tables/sell-view.html">
+                    <button type="button"  class="btn btn-primary">สร้าง</button>
+                  </a>
+
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-12">
+
+
+
+          </div>
+        </div>
+      </div>
+      <footer class="footer footer-black  footer-white ">
+        <div class="container-fluid">
+          <div class="row">
+            <nav class="footer-nav">
+              <ul>
+                <li>
+                  <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>
+                </li>
+                <li>
+                  <a href="http://blog.creative-tim.com/" target="_blank">Blog</a>
+                </li>
+                <li>
+                  <a href="https://www.creative-tim.com/license" target="_blank">Licenses</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="credits ml-auto">
+              <span class="copyright">
+                ©
+                <script>
+                  document.write(new Date().getFullYear())
+                </script>, made with <i class="fa fa-heart heart"></i> by Creative Tim
+              </span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <!--   Core JS Files   -->
+<script src="{% static 'sell/js/core/jquery.min.js' %}"></script>
+<script src="{% static 'sell/js/core/popper.min.js' %}"></script>
+<script src="{% static 'sell/js/core/bootstrap.min.js' %}"></script>
+<script src="{% static 'sell/js/plugins/perfect-scrollbar.jquery.min.js' %}"></script>
+<script src="{% static 'sell/js/plugins/moment.min.js' %}"></script>
+<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+<script src="{% static 'sell/js/plugins/bootstrap-switch.js' %}"></script>
+<!--  Plugin for Sweet Alert -->
+<script src="{% static 'sell/js/plugins/sweetalert2.min.js' %}"></script>
+<!-- Forms Validations Plugin -->
+<script src="{% static 'sell/js/plugins/jquery.validate.min.js' %}"></script>
+<!--  Plugin for the Wizard, full documentation here: https://github.com/VinceG/twitter-bootstrap-wizard -->
+<script src="{% static 'sell/js/plugins/jquery.bootstrap-wizard.js' %}"></script>
+<!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
+<script src="{% static 'sell/js/plugins/bootstrap-selectpicker.js' %}"></script>
+<!--  Plugin for the DateTimePicker, full documentation here: https://eonasdan.github.io/bootstrap-datetimepicker/ -->
+<script src="{% static 'sell/js/plugins/bootstrap-datetimepicker.js' %}"></script>
+<!--  DataTables.net Plugin, full documentation here: https://datatables.net/    -->
+<script src="{% static 'sell/js/plugins/jquery.dataTables.min.js' %}"></script>
+<!--	Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  -->
+<script src="{% static 'sell/js/plugins/bootstrap-tagsinput.js' %}"></script>
+<!-- Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+<script src="{% static 'sell/js/plugins/jasny-bootstrap.min.js' %}"></script>
+<!--  Full Calendar Plugin, full documentation here: https://github.com/fullcalendar/fullcalendar    -->
+<script src="{% static 'sell/js/plugins/fullcalendar.min.js' %}"></script>
+<!-- Vector Map plugin, full documentation here: http://jvectormap.com/documentation/ -->
+<script src="{% static 'sell/js/plugins/jquery-jvectormap.js' %}"></script>
+<!--  Plugin for the Bootstrap Table -->
+<script src="{% static 'sell/js/plugins/nouislider.min.js' %}"></script>
+<!--  Google Maps Plugin    -->
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+<!-- Chart JS -->
+<script src="{% static 'sell/js/plugins/chartjs.min.js' %}"></script>
+<!--  Notifications Plugin    -->
+<script src="{% static 'sell/js/plugins/bootstrap-notify.js' %}"></script>
+<!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
+<script src="{% static 'sell/js/paper-dashboard.min.js?v=2.0.1' %}" type="text/javascript"></script>
+<!-- Paper Dashboard DEMO methods, don't include it in your project! -->
+<script src="{% static 'sell/demo/demo.js' %}"></script>
+  <script>
+    function setFormValidation(id) {
+      $(id).validate({
+        highlight: function(element) {
+          $(element).closest('.form-group').removeClass('has-success').addClass('has-danger');
+          $(element).closest('.form-check').removeClass('has-success').addClass('has-danger');
+        },
+        success: function(element) {
+          $(element).closest('.form-group').removeClass('has-danger').addClass('has-success');
+          $(element).closest('.form-check').removeClass('has-danger').addClass('has-success');
+        },
+        errorPlacement: function(error, element) {
+          $(element).closest('.form-group').append(error);
+        },
+      });
+    }
+
+    $(document).ready(function() {
+      setFormValidation('#RegisterValidation');
+      setFormValidation('#TypeValidation');
+      setFormValidation('#LoginValidation');
+      setFormValidation('#RangeValidation');
+    });
+
+    function multiply() {
+    a = Number(document.getElementById('QTY').value);
+    b = Number(document.getElementById('PPRICE').value);
+    c = a * b;
+
+    document.getElementById('TOTAL').value = c;
+}
+
+    $(document).ready(function() {
+      // initialise Datetimepicker and Sliders
+      demo.initDateTimePicker();
+      if ($('.slider').length != 0) {
+        demo.initSliders();
+      }
+    });
+
+  </script>
+
+
+</body>
+
+</html>
