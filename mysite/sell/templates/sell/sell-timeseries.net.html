@@ -251,87 +251,17 @@
                     </tr>
                   </tfoot>
                   <tbody>
-                    <tr>
-                      <td>2018</td>
-                      <td>1</td>
-
-                      <td>83725.23</td>
-                    </tr>
-
-                  <tr>
-                      <td>2018</td>
-                      <td>2</td>
-
-                      <td>66617.92</td>
-                    </tr>
-
-                  <tr>
-                      <td>2018</td>
-                      <td>3</td>
-
-                      <td>50097.78</td>
-                    </tr>
-
-                  <tr>
-                      <td>2018</td>
-                      <td>4</td>
-
-                      <td>420582.55</td>
-                    </tr>
-
-                  <tr>
-                      <td>2018</td>
-                      <td>5</td>
-
-                      <td>569793.97</td>
-                    </tr>
-
-                  <tr>
-                      <td>2018</td>
-                      <td>6</td>
-
-                      <td>323751.32</td>
-                    </tr>
-
-                  <tr>
-                      <td>2018</td>
-                      <td>7</td>
-                      <td>59560.75</td>
-                    </tr>
-
-                  <tr >
-                      <td >2018</td>
-                      <td>8</td>
-                      <td>44882.36</td>
-                    </tr>
-
-                  <tr >
-                      <td >2018</td>
-                      <td>9</td>
-                      <td>67875.13</td>
-                    </tr>
-
-                  <tr >
-                      <td >2018</td>
-                      <td>10</td>
-                      <td>171503.81</td>
-                    </tr>
-
-                  <tr >
-                      <td >2018</td>
-                      <td>11</td>
-                      <td>302556.99</td>
-                    </tr>
-
-                  <tr>
-                      <td >2018</td>
-                      <td>12</td>
-
-                      <td>375920.43</td>
-                    </tr>
-
+                      {% for amount in line_sell_list.2018 %}
+                        <tr>
+                          <td>2018</td>
+                          <td>{{ forloop.counter }}</td>
+                          <td>{{ amount }}</td>
+                        </tr>
+                      {% endfor %}
+                  </tbody>
                 </table>
               </div>
+              
               <!-- end content-->
             </div>
             <!--  end card  -->
@@ -446,6 +376,9 @@
       table.on('click', '.like', function() {
         alert('You clicked on Like button');
       });
+
+      let line_sell_list = {{ line_sell_list|safe }}
+      createChart(line_sell_list[2018])
     });
   </script>
 </body>
